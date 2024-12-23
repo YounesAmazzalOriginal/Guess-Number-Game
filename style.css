@@ -135,6 +135,10 @@ body {
   margin-block: 10px 20px;
 }
 
+.media-links a{
+  cursor: pointer;
+}
+
 /* Responsive Design */
 @media (max-width: 480px) {
   .content {
