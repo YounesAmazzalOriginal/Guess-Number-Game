@@ -135,6 +135,7 @@ body {
   margin-block: 10px 20px;
 }
 
+.media-links a button,
 .media-links a{
   cursor: pointer;
 }
