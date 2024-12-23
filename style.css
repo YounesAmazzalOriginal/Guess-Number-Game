@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+select {
+  outline: none;
+}
+
+/* Body Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Content Box */
+.content {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Select Box */
+#min-max-select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}
+
+/* Probability Text */
+.probability {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+/* Top Section */
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Boxes */
+.text-and-box {
+  text-align: center;
+}
+
+.text-and-box input {
+  width: 70px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}
+
+.text-and-box h4 {
+  font-size: 0.8rem;
+  margin: 0.5rem 0 0;
+  color: #888;
+}
+
+/* Enter Number Text */
+.enter-number-between {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.enter-number-between span {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+/* Main Input Field */
+#guess {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}
+
+/* Buttons */
+.validbtn {
+  background-color: #ff5722;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.validbtn:hover {
+  background-color: #e64a19;
+}
+
+/* Result Display */
+.show-number,
+.check-guess {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.show-number {
+  margin-block: 10px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .content {
+    padding: 1.5rem;
+  }
+
+  .top {
+    flex-direction: column;
+  }
+
+  .text-and-box {
+    margin-bottom: 1rem;
+  }
+
+  #guess {
+    font-size: 0.9rem;
+  }
+
+  .validbtn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Bottom Container */
+.bottom-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+
+.bottom-container .media-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.bottom-container .media-links button {
+  color: #e64a19;
+  background-color: transparent;
+  border: none;
+}
+
+/* Disabled Button */
+button:disabled {
+  opacity: 50%;
+}

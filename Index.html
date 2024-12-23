@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number Game</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Js -->
+    <script src="script.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Cdn -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <select name="" id="min-max-select">
+        <option value="10">1-10</option>
+        <option value="50">1-50</option>
+        <option value="100">1-100</option>
+      </select>
+
+      <p class="probability">
+        The probability of winning is <span>10.0%</span>
+      </p>
+      <div class="top">
+        <div class="text-and-box">
+          <input type="number" readonly id="last-score" value="0" />
+          <h4>Last Score</h4>
+        </div>
+        <div class="text-and-box">
+          <input type="number" readonly id="number-of-guesses" value="0" />
+          <h4>Number Of Guesses</h4>
+        </div>
+      </div>
+      <p class="enter-number-between">Enter Number between 1-<span>10</span></p>
+      <div class="bottom-inputs">
+        <input type="number" id="guess" />
+      </div>
+      <div class="">
+        <span class="show-number"></span>
+        <span class="check-guess"></span>
+      </div>
+      <div class="bottom-container">
+        <div class="media-links">
+          <a href="https://wa.me/212635303129">
+            <button>
+              <i class="fa-brands fa-whatsapp"></i>
+            </button>
+          </a>
+          <a href="https://www.linkedin.com/in/younes-amazzal-3152042b0/">
+            <button>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </button>
+          </a>
+          <a href="https://www.instagram.com/amzprod2">
+            <button>
+              <i class="fa-brands fa-instagram"></i>
+            </button>
+          </a>
+          <a href="https://github.com/YounesAmazzalOriginal">
+            <button>
+              <i class="fa-brands fa-github"></i>
+            </button>
+          </a>
+        </div>
+
+        <button class="validbtn" onclick="submitBtn()">Valid</button>
+      </div>
+    </div>
+  </body>
+</html>
